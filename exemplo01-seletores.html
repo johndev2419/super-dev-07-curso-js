@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/exemplo01-seletores.css">
+</head>
+
+<body>
+    <h1>Exemplos seletores</h1>
+
+    <h2>seletor de id</h2>
+    <form action="#" id="formulario-calculadora">
+        <input type="number" id="numero1" placeholder="Número 1">
+        <input type="number" id="numero2" placeholder="Número 2">
+        <button type="button" id="btn-somar" onclick="somar()">somar</button>
+        <button type="button" id="btn-subtrair" onclick="subtrair()">subtrair</button>
+        <button type="button" id="btn-multiplicar" onclick="multiplicar()">multiplicar</button>
+        <p id="resultado"></p>
+
+    </form>
+
+    <h2>Seletor de classe</h2>
+    <div class="elementos">
+        <div>
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+        </div>
+        <button onclick="definicor(`azul`)">azul</button>
+        <button onclick="definircor(`roxo`)">roxo</button>
+        <button onclick="definircor(`perto`)">verde</button>
+        <button onclick="definircor(`vermelho`)">vermelho</button>
+    </div>
+    <h2>Seletor de Tag</h2>
+    <div>
+        <iframe src="https://giphy.com/embed/hDMJjUNxLhIjK" width="100" height="100" style  frameBorder="0"
+            class="giphy-embed" allowFullScreen></iframe>
+        <button class="btn" onclick="alterarVisibilidade()">Alterar Visibilidade</button>
+    </div>
+
+    <h2>seletor de nome</h2>
+    <div id="btn-acoes">
+    <button class = "btn" onclick="exemploQuerySelector()">QUerySelector</button>
+    <button class = "btn" onclick="exemploQuerySelectorAll()">QUerySelectorAll</button>
+    <button class = "btn" onclick="resert()">Resert</button>
+    </div>
+    <div id="jogos">
+
+        <label for="campo-nome">nome</label>
+        <input type="text" id="campo-nome" name="nome">
+        <label for="campo-sobrenome">sobrenome</label>
+        <input type="text" id="campo-sobrenome" name="sobrenome">
+        <button class="btn" onclick="apresentarNomeCompleto()">apresentar Nome Completo</button>
+        <button class="btn" onclick="limparCampo()">Limpar campo</button>
+        <p id="resultadonomes"></p>
+    </div>
+
+    <h2>seletor queryselector e queryselectorAll </h2>
+    <p><strong>PlayStation 5 (PS5)</strong><br>
+O PlayStation 5 representa a aposta da Sony na nova geração de consoles, trazendo potência de hardware com o SSD ultrarrápido e gráficos em até 4K com ray tracing. Além da performance, o console se destaca pelo controle DualSense, que introduz gatilhos adaptáveis e feedback háptico, aumentando a imersão nos jogos. Outra grande força do PS5 são seus exclusivos, como <em>Spider-Man: Miles Morales</em>, <em>God of War Ragnarök</em> e <em>The Last of Us Part I</em>, que reforçam a tradição da marca em oferecer experiências cinematográficas e narrativas marcantes.</p>
+
+<p><strong>PC</strong><br>
+O PC é a plataforma mais versátil do universo gamer, atendendo tanto jogadores casuais quanto profissionais de eSports. Com a possibilidade de personalização de hardware, os computadores permitem desde configurações acessíveis até máquinas de ponta capazes de rodar jogos em 8K ou com taxas de quadros altíssimas. Além disso, o PC conta com lojas digitais como Steam, Epic Games Store e GOG, que oferecem milhares de títulos, muitas vezes com preços acessíveis e promoções frequentes. A compatibilidade com mods e a capacidade de upgrades tornam o PC uma escolha de longo prazo para quem busca flexibilidade e desempenho.</p>
+
+<p><strong>Xbox Series X|S</strong><br>
+A Microsoft trouxe ao mercado o Xbox Series X|S com foco em desempenho e acessibilidade. O Series X é o modelo mais potente, capaz de oferecer gráficos em 4K e carregamentos rápidos, enquanto o Series S surge como uma opção mais econômica, voltada para jogadores que não abrem mão da nova geração, mas buscam custo-benefício. O grande diferencial da plataforma está no serviço Xbox Game Pass, que oferece acesso a uma vasta biblioteca de jogos, incluindo lançamentos no dia de estreia. Essa estratégia consolidou o Xbox como uma excelente alternativa para quem quer variedade de títulos sem gastar muito.</p>
+
+<p><strong>Nintendo Switch</strong><br>
+O Nintendo Switch conquistou o público ao propor uma experiência híbrida: pode ser usado como console de mesa conectado à TV ou em modo portátil. Essa versatilidade, somada à jogabilidade inovadora dos Joy-Con, garante diferentes formas de diversão. Além disso, a Nintendo aposta em suas franquias clássicas, oferecendo jogos exclusivos como <em>The Legend of Zelda: Breath of the Wild</em>, <em>Super Mario Odyssey</em> e <em>Pokémon Scarlet and Violet</em>. O Switch também tem se destacado pela sua capacidade de reunir famílias e amigos em experiências multiplayer locais e pela portabilidade que permite jogar em qualquer lugar.</p>
+
+
+
+    <script src="assets/js/exemplo01-seleteros.js"></script>
+</body>
+
+</html>
