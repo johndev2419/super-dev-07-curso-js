@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Catálogo de Jogos — Tema Gamer</title>
+
+    <!-- Fonte com vibe gamer (opcional) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/exemplo03-crud.css">
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <div class="logo" aria-hidden="true"></div>
+            <div class="title">Catálogo de Jogos</div>
+        </div>
+        <div aria-hidden="true" style="opacity:.8;color:var(--txt-300)">Tema: Dark • Gamer</div>
+    </header>
+
+    <main>
+        <section class="grid">
+            <!-- FORMULÁRIO -->
+            <article class="card" aria-labelledby="form-title">
+                <div class="card-header">
+                    <h2 id="form-title">Cadastrar Jogo</h2>
+                </div>
+                <div class="card-body">
+                    <form id="form-jogo" autocomplete="off">
+                        <div>
+                            <label for="nome">Nome do jogo</label>
+                            <input type="text" id="nome" name="nome" placeholder="Ex.: Elden Ring" minlength="2"
+                                value="Elden Ring" maxlength="80" required />
+                        </div>
+
+                        <div class="row">
+                            <div>
+                                <label for="preco">Preço (R$)</label>
+                                <input type="number" id="preco" name="preco" placeholder="Ex.: 299.90" min="0"
+                                    value="300.20" step="0.01" inputmode="decimal" required />
+                            </div>
+
+                            <div>
+                                <label for="categoria">Categoria</label>
+                                <select id="categoria" name="categoria" required>
+                                    <option value="" disabled selected>Selecione uma categoria</option>
+                                    <option>Ação</option>
+                                    <option>Aventura</option>
+                                    <option selected>RPG</option>
+                                    <option>Estratégia</option>
+                                    <option>Esportes</option>
+                                    <option>Corrida</option>
+                                    <option>Simulação</option>
+                                    <option>Indie</option>
+                                    <option>Puzzle</option>
+                                    <option>Battle Royale</option>
+                                    <option>Plataforma</option>
+                                    <option>Horror</option>
+                                    <option>Sandbox</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <button class="btn-outline" type="reset">Limpar</button>
+                            <button class="btn" id="btn-salvar" type="button" onclick="salvarJogo()">Salvar</button>
+                        </div>
+                    </form>
+                </div>
+            </article>
+
+            <!-- TABELA -->
+            <article class="card" aria-labelledby="table-title">
+                <div class="card-header">
+                    <h2 id="table-title">Lista de Jogos</h2>
+                </div>
+                <div class="card-body table-wrap">
+                    <table aria-describedby="table-title">
+                        <thead>
+                            <tr>
+                                <th style="width:40%">Nome do jogo</th>
+                                <th style="width:22%">Categoria</th>
+                                <th style="width:18%">Preço</th>
+                                <th style="width:20%">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody-jogos">
+                            <!-- Exemplos estáticos
+                            <tr>
+                                <td>Cyber Horizon</td>
+                                <td><span class="chip">Ação</span></td>
+                                <td class="price">R$ 199,90</td>
+                                <td class="table-actions">
+                                    <button class="btn-edit" type="button" title="Editar">
+                                        <i class="fas fa-pencil"></i>
+                                        Editar
+                                    </button>
+                                    <button class="btn-danger" type="button" title="Apagar">
+                                        <i class="fas fa-trash"></i>
+                                        Apagar
+                                    </button>
+                                </td>
+                            </tr>
+                             -->
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <small>Pronto para seus Jogos 🚀</small>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script src="assets/js/exemplo03-crud.js"></script>
+</body>
+
+</html>
