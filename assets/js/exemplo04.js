@@ -247,7 +247,7 @@ let colaboradoresSalarioBrutos = colaboradores.map(colaborador => {
     let salarioBruto= colaborador.valor_hora * colaborador.quantidade_horas;
 
     return{salarioBruto: salarioBruto, nome: colaborador.nome}
-});
+}); 
 
 //criar uma lista com nome e calcular a idade do colaborador 
 let colaboradoresIdades = colaboradores.map(colaborador => {
